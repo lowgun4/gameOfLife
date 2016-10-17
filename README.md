@@ -10,7 +10,7 @@ This project involves creating [Conway's Game of Life](https://en.wikipedia.org/
 
 Here's a demo of what your final product might look like:
 
-![Game of Life!](https://youtu.be/fEdAywq9X4Q)
+[Game of Life!](https://youtu.be/fEdAywq9X4Q)
 
 ## Table of Contents
 
@@ -190,15 +190,16 @@ Submissions will occur via your team GitHub repository. You will alter the start
 
 # Grading Point Distribution and Dates
 
+Be sure to visit the [final project general specification](https://eecs183.org/projects/final) for more details on submission dates, times, and policies.
+
 | Project Component   | Maximum Points | Due Date | How to Submit |
 |:-------------------:|:--------------:|:--------:|:-------------:|
-|Proposal             |      10         |  3/25   | Gradescope |
-|Core Team Evaluation |      5         |    4/8   |TBA        |
-|Core                 |      50        |    4/8   |GitHub         |
-|Reach                |      50        |     4/18    |GitHub         |
-|Final Team Evaluation|      5         |     4/19    |TBA        |
-|Showcase             |      10        |    4/21     |Attendance + Presentation     |
-
+|Proposal             |      10         |  10/20   | Gradescope |
+|Core                 |      50        |    12/2   |GitHub         |
+|Core Team Evaluation |      5         |    12/3   |TBA        |
+|Reach                |      50        |     12/13    |GitHub         |
+|Final Team Evaluation|      5         |     12/14    |TBA        |
+|Showcase             |      10        |    12/16     |Attendance + Presentation     |
 
 # Support Staff
 
