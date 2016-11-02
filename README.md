@@ -205,9 +205,11 @@ Be sure to visit the [final project general specification](https://eecs183.org/p
 
 The Game of Life staff team has the following staff members.
 
-* Isabella DeShantz-Cook
-* Zhengxi Tan
-* Maxim Aleksa
 * Diana Gage
+* Hiromichi Cho
+* Isabella DeShantz-Cook
+* Maxim Aleksa
+* Ryan Cesiel
+* Zhengxi Tan
 
 
