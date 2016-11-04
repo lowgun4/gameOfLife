@@ -46,7 +46,7 @@ The rules that determine if a cell continues to the next generation are as follo
 * Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction
 
 ## Patterns
-hese rules yield some very interesting patterns of cells that occur frequently when using correct versions of Game of Life.  These examples consist of 3 categories:
+These rules yield interesting patterns of cells that occur frequently when using correct versions of Game of Life. The patterns fall into the following three categories:
 
 * Still Lifes
 	Still lifes are exactly what they sound like; they remain stationary between each generation.
@@ -71,7 +71,7 @@ There are three files that you will be given to work on this project:
 * index.html: This is the basic webpage you will be working with over the course of this project.  You will NOT need to modify this for the Core portion of this project.
 * styles.css: This is the basic style sheet for index.html that applies custom styles to the webpage.  You will NOT need to modify this for the Core portion of this project.
 
-For the Core portion of this project, you will be responsible for writing the JavaScript that will interact with the canvas and make your Game of Life...well...come to life!  Gol.js contains code that is already implemented for you, some global variables* listed near the top, as well as a list of functions that you must implement to make your web app work.  Many of the functions should be self-explanatory, between their name and their RMEs.
+For the Core portion of this project, you will be responsible for writing the JavaScript that will interact with the canvas and make your Game of Life...well...come to life!  gol.js contains code that is already implemented for you, some global variables* listed near the top, as well as a list of functions that you must implement to make your web app work.  Many of the functions should be self-explanatory, between their name and their RMEs.
 
 ### Global Variables
 The global variables you will be using are:
@@ -86,7 +86,7 @@ The global variables you will be using are:
 **WARNING: JavaScript does not have a const keyword, so be very VERY sure you do not make any assignments to those global variables**.
 
 ### Software Rules
-One important part of the of Game of Life are the rules listed above, which we will go over in more detail now, with a few special rules for our project.
+One important part of the of Game of Life are the rules listed above, which we will go over in more detail now.
 
 Each cell has three different states (or colors) while the game is running.  The three different states are:
 
@@ -119,7 +119,7 @@ Here is a short guide to help you start this project.
 
 ## Software
 
-There are two parts to your software enviroment to start: the project distribution code and Google Chrome browswer.
+There are two parts to your software enviroment to start: the project distribution code and Google Chrome browser.
 
 ### Google Chrome
 
