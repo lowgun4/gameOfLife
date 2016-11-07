@@ -1,59 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Game of Life
+    </title>
 
-		<title>
-			EECS 183 GoL
-		</title>
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <!-- jQuery Library -->
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Custom JavaScript and CSS -->
+    <script type="text/javascript" src="gol.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
 
-		<!-- Bootstrap Libraries -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">	
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-
-        <!-- Project JavaScript and Stylesheet Files -->
-		<script type="text/javascript" src="gol.js"></script>
-        <link type="text/css" rel="stylesheet" href="styles.css" />
-	</head>
-	
-    <body class="container">
-        <h2>EECS 183: Conway's Game of Life</h2>
-        
-        <canvas id="grid" height="400px" width="700px"></canvas>
-        
-        <div id="button-wrapper">
+<body>
+    <div id="header">
+        <h1>Game of Life</h1>
+    </div>
+    <div id="content">
+        <div id="canvas-container"></div>
+        <div id="button-container">
             <button id="still-life-btn">Draw Stillife</button>
             <form>
                 <select id="still-life-select">
                     <option value="Block" selected>Block</option>
-                    <option value="Beehive" >Beehive</option>
-                    <option value="Loaf" >Loaf</option>
-                    <option value="Boat" >Boat</option>
+                    <option value="Beehive">Beehive</option>
+                    <option value="Loaf">Loaf</option>
+                    <option value="Boat">Boat</option>
                 </select>
             </form>
             <button id="oscillator-btn">Draw Oscillator</button>
             <form>
                 <select id="oscillator-select">
                     <option value="Blinker" selected>Blinker</option>
-                    <option value="Toad" >Toad</option>
-                    <option value="Beacon" >Beacon</option>
-                    <option value="Pulsar" >Pulsar</option>
+                    <option value="Toad">Toad</option>
+                    <option value="Beacon">Beacon</option>
+                    <option value="Pulsar">Pulsar</option>
                 </select>
             </form>
             <button id="spaceship-btn">Draw Spaceship</button>
             <form>
                 <select id="spaceship-select">
                     <option value="Glider" selected>Glider</option>
-                    <option value="Lwss" >Lwss</option>
+                    <option value="Lwss">Lwss</option>
                 </select>
             </form>
 
             <button id="start-game">Start</button>
             <button id="stop-game">Stop</button>
         </div>
-	</body>
+    </div>
+</body>
 </html>
