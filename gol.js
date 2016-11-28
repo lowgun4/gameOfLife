@@ -155,7 +155,36 @@ function countLiveNeighbors(grid, row, col) {
  * Effects:  Updates the liveNeighbors field of each cell in grid
  */
 function updateLiveNeighbors(grid) {
-    // TODO: implement
+    for(var i = 0; i < Constants.numberOfColumns; ++i) {
+        for(var j = 0 j < Constants.numberOfRows; ++i) {
+            var count = 0
+            if(j == Constants.numberOfColumns - 1 && i == Constants.numberOfRows - 1 && grid[j+1][i+1].isAlive == true) {
+                ++count
+            }
+            if(j == Constants.numberOfColumns - 1 && grid[j+1][i].isAlive == true) {
+                ++count
+            }
+            if(i == Constants.numberOfRows - 1 && grid[j][i+1].isAlive == true) {
+                ++count
+            }
+            if(j == Constants.numberOfColumns - 1 && i == 0 && grid[j+1][i-1].isAlive == true) {
+                ++count
+            }
+            if(j == 0 && i == Constants.numberOfRows - 1 && grid[j-1][i+1].isAlive == true) {
+                ++count
+            }
+            if(i == 0 && grid[j][i-1].isAlive == true) {
+                ++count
+            }
+            if(j == 0 && grid[j-1][i].isAlive == true) {
+                ++count
+            }
+            if(j == 0 && i == 0 && grid[j-1][i-1].isAlive == true) {
+                ++count
+            }
+            grid[j][i].liveNeighbors = count
+        }
+    } 
 }
 
 /**
@@ -177,7 +206,8 @@ function updateCells(grid) {
  *           proceeding to change the state of all cells.
  */
 function evolveStep(grid) {
-    // TODO: implement
+    updateLiveNeighbors(grid)
+    updateCells(grid)
 }
 
 /**
