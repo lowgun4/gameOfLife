@@ -144,7 +144,32 @@ function setCellState(state, grid, row, col) {
  *           the cell at row, col in grid and returns the count.
  */
 function countLiveNeighbors(grid, row, col) {
-    // TODO: implement
+    var count = 0
+    if(j != Constants.numberOfRows - 1 && i != Constants.numberOfColumns - 1 && grid[j+1][i+1].isAlive == true) {
+        ++count
+    }
+    if(j != Constants.numberOfRows - 1 && grid[j+1][i].isAlive == true) {
+        ++count
+    }
+    if(i != Constants.numberOfColumns - 1 && grid[j][i+1].isAlive == true) {
+        ++count
+    }
+    if(j != Constants.numberOfRows - 1 && i != 0 && grid[j+1][i-1].isAlive == true) {
+        ++count
+    }
+    if(j != 0 && i != Constants.numberOfColumns - 1 && grid[j-1][i+1].isAlive == true) {
+        ++count
+    }
+    if(i != 0 && grid[j][i-1].isAlive == true) {
+        ++count
+    }
+    if(j != 0 && grid[j-1][i].isAlive == true) {
+        ++count
+    }
+    if(j == 0 && i == 0 && grid[j-1][i-1].isAlive == true) {
+        ++count
+    }
+    return count
 }
 
 
@@ -160,42 +185,6 @@ function updateLiveNeighbors(grid) {
             grid[j][i].liveNeighbors = countLiveNeighbors(grid, j, i)
         }
     }
-
-
-
-    //FIX ME: The following is actually an implementation for countLiveNeighbors, if you wish to use it as such.
-    /*
-    for(var i = 0; i < Constants.numberOfColumns; ++i) {
-        for(var j = 0; j < Constants.numberOfRows; ++j) {
-            var count = 0
-            if(j == Constants.numberOfColumns - 1 && i == Constants.numberOfRows - 1 && grid[j+1][i+1].isAlive == true) {
-                ++count
-            }
-            if(j == Constants.numberOfColumns - 1 && grid[j+1][i].isAlive == true) {
-                ++count
-            }
-            if(i == Constants.numberOfRows - 1 && grid[j][i+1].isAlive == true) {
-                ++count
-            }
-            if(j == Constants.numberOfColumns - 1 && i == 0 && grid[j+1][i-1].isAlive == true) {
-                ++count
-            }
-            if(j == 0 && i == Constants.numberOfRows - 1 && grid[j-1][i+1].isAlive == true) {
-                ++count
-            }
-            if(i == 0 && grid[j][i-1].isAlive == true) {
-                ++count
-            }
-            if(j == 0 && grid[j-1][i].isAlive == true) {
-                ++count
-            }
-            if(j == 0 && i == 0 && grid[j-1][i-1].isAlive == true) {
-                ++count
-            }
-            grid[j][i].liveNeighbors = count
-        }
-    }
-    */ 
 }
 
 /**
