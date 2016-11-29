@@ -156,7 +156,17 @@ function countLiveNeighbors(grid, row, col) {
  */
 function updateLiveNeighbors(grid) {
     for(var i = 0; i < Constants.numberOfColumns; ++i) {
-        for(var j = 0 j < Constants.numberOfRows; ++i) {
+        for(var j = 0; j < Constants.numberOfRows; ++j) {
+            grid[j][i].liveNeighbors = countLiveNeighbors(grid, j, i)
+        }
+    }
+
+
+
+    //FIX ME: The following is actually an implementation for countLiveNeighbors, if you wish to use it as such.
+    /*
+    for(var i = 0; i < Constants.numberOfColumns; ++i) {
+        for(var j = 0; j < Constants.numberOfRows; ++j) {
             var count = 0
             if(j == Constants.numberOfColumns - 1 && i == Constants.numberOfRows - 1 && grid[j+1][i+1].isAlive == true) {
                 ++count
@@ -184,7 +194,8 @@ function updateLiveNeighbors(grid) {
             }
             grid[j][i].liveNeighbors = count
         }
-    } 
+    }
+    */ 
 }
 
 /**
